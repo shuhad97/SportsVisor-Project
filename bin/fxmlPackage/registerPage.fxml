@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersPackage.RegisterController">
+  <children>
+    <ImageView fitHeight="1096.0" fitWidth="1931.0" layoutY="-11.0">
+      <image>
+        <Image url="@blurbluebackground.jpg" />
+      </image>
+    </ImageView>
+    <TextField fx:id="createUsername" layoutX="544.0" layoutY="270.0" onAction="#handleRegisterAction" prefHeight="35.0" prefWidth="246.0" promptText="Username " />
+    <PasswordField fx:id="createPasswordField" layoutX="546.0" layoutY="397.0" onAction="#handleRegisterAction" prefHeight="35.0" prefWidth="246.0" promptText="Password" />
+    <ChoiceBox fx:id="choiceType" layoutX="546.0" layoutY="104.0" prefHeight="25.0" prefWidth="232.0" style="-fx-border-radius: 50px;" />
+    <PasswordField fx:id="confirmPasswordField" layoutX="546.0" layoutY="440.0" onAction="#handleRegisterAction" prefHeight="35.0" prefWidth="246.0" promptText="Confirm Password" />
+    <Button fx:id="returnButton" layoutX="42.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleReturnPage" prefHeight="35.0" prefWidth="184.0" style="-fx-background-color: #ADD8E6; -fx-border-radius: 50px;" text="Back" />
+    <TextField fx:id="createfirstName" layoutX="546.0" layoutY="143.0" onAction="#handleRegisterAction" prefHeight="35.0" prefWidth="246.0" promptText="FirstName" />
+    <Label fx:id="errorRegister" layoutX="548.0" layoutY="566.0" prefHeight="23.94140625" prefWidth="266.0" />
+    <TextField fx:id="createlastName" layoutX="546.0" layoutY="185.0" onAction="#handleRegisterAction" prefHeight="35.0" prefWidth="246.0" promptText="LastName" />
+    <TextField fx:id="createproviderName" layoutX="544.0" layoutY="227.0" onAction="#handleRegisterAction" prefHeight="35.0" prefWidth="246.0" promptText="ProviderName" />
+    <TextField fx:id="createEmail" layoutX="544.0" layoutY="314.0" onAction="#handleRegisterAction" prefHeight="35.0" prefWidth="246.0" promptText="Email" />
+    <TextField fx:id="createphoneNumber" layoutX="544.0" layoutY="356.0" onAction="#handleRegisterAction" prefHeight="35.0" prefWidth="246.0" promptText="Phone Number" />
+    <BorderPane layoutX="860.0" layoutY="440.0" prefHeight="200.0" prefWidth="200.0" />
+    <CheckBox fx:id="confirmTermsBox" layoutX="559.0" layoutY="492.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="277.0" text="Confirm Terms &amp; Conditions" />
+    <Button fx:id="buttonRegister" layoutX="559.0" layoutY="524.0" mnemonicParsing="false" onAction="#handleRegisterAction" prefHeight="27.0" prefWidth="217.0" style="-fx-border-radius: 50px; -fx-background-color: #e7e7e7;" text="Register " />
+    <Label contentDisplay="CENTER" layoutX="566.0" layoutY="35.0" prefHeight="34.0" prefWidth="193.0" style="-fx-alignment: center;" text="Register" textAlignment="CENTER" textFill="#649ce1">
+      <font>
+        <Font name="Arial Black" size="38.0" />
+      </font>
+    </Label>
+  </children>
+</Pane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<Pane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllersPackage.ActivityProviderLoggedInController">
+  <children>
+  
+    <Label fx:id="infoLabel" layoutX="512.0" layoutY="40.0" text="ACTIVITY PROVIDER" />
+    <Label fx:id="usernameLabel" layoutX="512.0" layoutY="60.0" text="default" />
+    <Label fx:id="detailsLabel" layoutX="512.0" layoutY="100.0" text="Your personal details:"/>
+    <Label fx:id="firstNameLabel" layoutX="512.0" layoutY="120.0" text="default"/>
+    <Label fx:id="lastNameLabel" layoutX="512.0" layoutY="140.0" text="default"/>
+    <Label fx:id="accountTypeLabel" layoutX="512.0" layoutY="160.0" text="default"/>
+    <Button fx:id="redirectHomepage" onAction="#handleRedirectHomepage" layoutX="534.0" layoutY="435.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="HomePage" />
+    <Button fx:id="addActivity" layoutX="534.0" layoutY="465.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Add Activity" onAction="#redirectAddActivityPage"/>
+  </children>
+  
+</Pane>
